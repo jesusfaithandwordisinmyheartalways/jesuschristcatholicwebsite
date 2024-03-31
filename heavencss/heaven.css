@@ -1,0 +1,415 @@
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+
+
+
+
+:root {
+    --white:white;
+    --black:black;
+    --green: green;
+    --whitesmoke:whitesmoke;
+    --royalBlue: royalblue;
+    --dodgerBlue: dodgerBlue;
+    --slateGrey: slateGray;
+    --lightGrey:lightGrey;
+    --skyblue:skyblue;
+    --lightGreen: lightgreen;
+    --darkGreen:darkgreen;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    height:auto;
+    margin:0;
+    overflow-x:hidden
+    
+}
+
+
+
+
+
+
+
+
+/*----------------------------------------------HEADER---------------------------------------------*/
+
+
+
+.Top-Page-Four {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    align-content: center;
+    margin:0;
+    height:448px;
+
+}
+
+
+.top-page-image-four img {
+    position:absolute;
+    top:0px;
+    margin:0;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.heaven-text {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    position: relative;
+    top:160px;
+    left: 350px;
+    width: 450px;
+}
+
+.heaven-text h3 {
+    font-size: 2.6rem;
+    color:white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*----------------------------------------------LENT GUIDE---------------------------------------------*/
+
+.Lent-Guide {
+    position: fixed;
+    top:60px;
+    right:-50px;
+    cursor: pointer;
+    background-color: palegreen;
+    border-radius: 10px;
+    z-index:3;
+    text-align: center;
+    width:240px;
+    height: 60px;
+    transition: 0.9s linear;
+  }
+
+  .Lent-Guide p {
+    font-family: "Edu TAS Beginner", cursive;
+    font-size: clamp(1rem, 12vw, 1.3rem);
+    color:slategray;
+
+    
+  }
+
+  .Lent-Guide:hover {
+    background-color:skyblue;
+    right:10px;
+  }
+
+  .Lent-Guide p:hover {
+    color:white;
+  }
+
+
+
+
+
+
+  /*----------------------------------------------NAVBAR---------------------------------------------*/
+
+
+
+  .Menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:520px;
+    left: -100px;
+    align-items:center;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    margin-block: 30px;
+    transition: 0.9s linear;
+  
+}
+
+.Menu:hover {
+    left: -45px;
+  
+}
+
+.Menu a {
+    text-decoration: none;
+    margin:70px 3px;
+    font-size: clamp(1rem, 1.5vw, 1.9rem);
+    text-align: center;
+    padding:0.3em 1em;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Edu TAS Beginner", cursive;
+    font-weight:600;
+    color:black;
+}
+
+.Menu a:nth-of-type(1) {
+    outline: 3px solid white;
+    border-radius:10px;
+    padding:1em 0.9em;
+    color:white;
+
+}
+
+
+.Menu a:nth-of-type(2) {
+    outline: 3px solid skyblue;
+    border-radius:10px;
+    background-color:white;
+    padding:1em 0.9em;
+    color:skyblue;
+
+}
+
+.Menu a:nth-of-type(3) {
+    outline: 3px solid dodgerblue;
+    border-radius:10px;
+    padding:1em 0.9em;
+
+}
+
+
+
+
+.Menu .home-page {
+    background-color:green
+}
+
+.Menu a:hover:not(.home-page) {
+    background-color:dodgerblue;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------SIDEBAR SOCIAL MEDIA---------------------------------------------*/
+
+.Sidebar-Social-Media {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    top:410px;
+    right: 0px;
+    width: 7%;
+    height: 40%;
+    cursor: pointer;
+    gap:10px;
+}
+
+.Sidebar-Social-Media > div {
+    font-size: 1.7rem;
+}
+
+
+.Sidebar-Social-Media  .Youtube{
+   background-color:red;
+   color:white;
+   border-radius:10px;
+   width: 40px;
+   height: 30px; 
+}
+
+
+.Sidebar-Social-Media .Instagram {
+    background-color:pink;
+    color:white;
+    border-radius:10px;
+    width: 40px;
+    height: 30px; 
+}
+
+
+.Sidebar-Social-Media .Facebook {
+    background-color:dodgerblue;
+    color:white;
+    border-radius:10px;
+    width: 40px;
+    height: 30px; 
+}
+
+
+
+
+
+
+
+/*----------------------------------------------MAIN CONTENT---------------------------------------------*/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 20px 20px;
+    margin-block-start: 10px;
+    margin-left: 0px;
+    
+}
+
+
+.Content {
+    flex:0 0 900px;
+    width: 790px;
+}
+
+.Content p {
+    font-size:1.3vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------FOOTER---------------------------------------------*/
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    position: relative;
+    bottom: 0px;
+    width: 100vw;
+    height: 23vh;
+    margin:0;
+    margin-block-start: 65px;
+    padding:20px 10px;
+    background-image: linear-gradient(skyblue, dodgerblue);
+}
+
+
+
+.Social-Media {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  width: 300px;
+  font-family: "Madimi One", sans-serif;
+  color:white;
+  width: 300px;
+}
+
+.Social-Media a {
+  font-size: 1.4rem;
+  margin:0px 3px;
+
+}
+
+.Social-Media a:hover{
+  color:white
+}
+
+
+
+
+.Newsletter {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 310px;
+  top:20px;
+  text-align: center;
+  align-self: center;
+  border-radius:10px;
+  font-family: "Madimi One", sans-serif;
+  cursor: pointer;
+  padding:0.9em 1em;
+
+
+}
+
+.Newsletter a {
+  text-decoration: none;
+  color:white;
+  font-size: 1.2rem;
+  
+}
+
+
+.Donate {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 310px;
+  top:20px;
+  right: 30px;
+  align-self:end;
+  border-radius:7px;
+  font-family: "Madimi One", sans-serif;
+  cursor: pointer;
+  padding:0.9em 1em;
+  font-size: 1rem;
+
+}
+
+.Donate a {
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+
+}
+
+
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top:110px;
+  left: 510px;
+  width: 450px;
+}
+
+.copyright span {
+  color:white;
+  font-size: 1.3rem;
+  font-family: 'Times New Roman', Times, serif;
+  
+}

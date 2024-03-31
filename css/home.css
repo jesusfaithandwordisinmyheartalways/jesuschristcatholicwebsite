@@ -1,0 +1,317 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+
+
+
+:root {
+    --white:white;
+    --black:black;
+    --green: green;
+    --whitesmoke:whitesmoke;
+    --royalBlue: royalblue;
+    --dodgerBlue: dodgerBlue;
+    --slateGrey: slateGray;
+    --lightGrey:lightGrey;
+    --skyblue:skyblue;
+    --lightGreen: lightgreen;
+    --darkGreen:darkgreen;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--dodgerBlue);
+    height: auto;
+  
+}
+
+
+
+form.form-login {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 90px;
+    align-items:center;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    height:490px;
+    width: 550px;
+    transition:0.7s linear
+
+}
+
+form h2 {
+    position: absolute;
+    top:90px;
+    font-size:clamp(1rem, 4vw, 2rem);
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: dodgerblue;
+    z-index: 3;
+    transition:0.9s linear
+}
+
+
+
+.User-Label {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top:120px;
+    gap:10px;
+    height: 200px;
+    transition:0.9s linear
+}
+
+.User-Label input {
+    padding:0.3em 0.7em;
+    margin:0 auto;
+    border:none;
+    border-radius: 10px;
+    outline:none;
+    width: 300px;
+}
+
+
+.User-Label input:focus {
+    outline: 3px solid var(--skyBlue);
+    border: 3px solid var(--skyBlue);
+    caret-color: var(--dodgerBlue);
+}
+
+.User-Label input:invalid {
+    border: 1px solid purple
+}
+
+
+
+
+.User-Label label {
+    font-size: clamp(1rem, 1.9vw, 1.9rem);
+    font-family: "Truculenta", sans-serif;
+    color:var(--dodgerBlue)
+
+}
+
+div.username-error {
+    position: absolute;
+    display: block;
+    top:140px;
+    font-size: 0.9rem;
+    font-family: "Edu TAS Beginner", cursive;
+    color:purple;
+    height:150px;
+    width: 270px;
+    border: 2px solid whitesmoke;
+    border-radius:10px;
+    z-index: 3;
+    transition:0.9s linear;
+
+}
+
+
+span.letter-up {
+    position: absolute; 
+    top:10px;
+    left: 60px;
+    color:dodgerblue;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.upper-icon {
+    position: absolute;
+    display: none;
+    top:0px;
+    left: -60px;
+    font-size: 1.2rem;
+}
+
+
+.lowerCase {
+    position: absolute;
+    top:40px;
+    left: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    color:dodgerblue;
+    
+}
+
+.lower-icon {
+    position: absolute;
+    display: none;
+    top:0px;
+    left: -60px;
+    font-size: 1.2rem;
+}
+
+
+.specialCharacter {
+    position: absolute;
+    top:69px;
+    left: 60px;
+    font-size: qrem;
+    font-weight: 600;
+    color:dodgerblue;
+}
+
+.special-icon {
+    position:absolute;
+    display: none;
+    top:0px;
+    left: -60px;
+    font-size: 1.2rem;
+
+}
+
+.words-length {
+    position: absolute;
+    top:95px;
+    left: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    color:dodgerblue;
+
+}
+
+.words-length-icon {
+    position: absolute;
+    display: none;
+    top:0px;
+    left: -60px;
+    font-size: 1.2rem;
+
+}
+
+
+.digits {
+    position:absolute;
+    top:120px;
+    left:60px;
+    font-size: 1rem;
+    font-weight: 600;
+    color:dodgerblue;
+
+}
+
+
+.digits-icon {
+    position: absolute;
+    display: none;
+    top:0px;
+    left: -60px;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+.User-Sign {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top:350px;
+    gap:10px;
+    height: 200px;
+    transition:0.9s linear
+}
+
+.User-Sign label {
+    font-size: clamp(1rem, 1.9vw, 1.9rem);
+    font-family: "Truculenta", sans-serif;
+    color:var(--dodgerBlue)
+}
+
+.User-Sign input {
+    padding:0.3em 0.7em;
+    border-radius: 10px;
+    margin:0 auto;
+    border:none;
+    outline:none;
+    width: 300px;
+}
+
+
+.User-Email {
+    position: absolute;
+    display: none;
+    text-align: center;
+    top:0px;
+    right:70px;
+    border-radius:10px;
+    border: 2px solid whitesmoke;
+    height: 50px;
+    width: 150px;
+}
+
+.email-insert {
+    position: absolute;
+    text-align: center;
+    width:200px;
+    top:10px;
+    left: -30px;
+    color:dodgerblue
+}
+
+
+
+
+
+
+
+
+
+.User-Submit {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    top:520px;
+}
+
+.User-Submit input {
+    color:var(--skyblue);
+    background:var(--dodgerBlue);
+    padding:0.3em 1.2em;
+    width: 200px;
+    border:none;
+    border-radius: 10px;
+    font-size:clamp(1rem, 1.5vw, 2rem);
+    transition:0.9s linear
+}
+
+.User-Submit input:hover {
+    background-color: var(--lightGreen);
+    color:var(--white)
+}
+
+
+
+
+
+.User-Submit input:focus {
+    background-color:var(--darkGreen)
+}
