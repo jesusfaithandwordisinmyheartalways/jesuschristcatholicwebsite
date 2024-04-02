@@ -37,7 +37,7 @@ This code is under the MIT License.
 
 
 Contact: 
-Linkedn: https://www.linkedin.com/in/andrew-johnson-64632199/
+Linkedin: https://www.linkedin.com/in/andrew-johnson-64632199/
 
 
 
