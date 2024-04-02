@@ -1,4 +1,6 @@
-JESUS CHRIST CATHOLIC LOCAL HOST 
+JESUS CHRIST CATHOLIC LOCAL HOST
+
+
 This is a project on an localhost that shares details within the faith of the catholic relgion.
 
 
